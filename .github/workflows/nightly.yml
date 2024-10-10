@@ -37,7 +37,7 @@ jobs:
       id: push
       with:
         file: ./Dockerfile
-        platforms: linux/amd64,linux/aarch64
+        platforms: linux/amd64
         tags: "ghcr.io/edera-dev/paxtest-image:nightly"
         push: true
     - name: cosign sign
